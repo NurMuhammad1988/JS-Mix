@@ -14,7 +14,58 @@
     <h1>Ulug`bek Samig`jonov-Turni (type) o'zgartirish</h1>
 <br>
 
-<p></p>
+<p>"use strict";
+
+    ////////////////////////////////Type Conversion////////////////////////////////////////////
+    ////////// String to Object Number
+    // const yosh = "23"; //string typeof ga qaralsin
+    // console.log(yosh); //string typeof ga qaralsin
+    // console.log(Number(yosh)); //string numberga aylandi
+    // console.log(Number(yosh) + 1); //yani number objecti sabab endi malumot turi number yani 23+1=24 ga aylandi typeof ga qaralsin
+    
+    // console.log(yosh + 1); //yosh nomli o'zgaruvchi string malumot turi bo'lgani uchun concatenation holati yuzaga kelib 23+1=24 emas 231 qiymati yuzaga keladi lekin biz yosh nomli o'zgaruvchini birinchi number malumot turiga o'girib olsak 24 chiqadi bu holat yuqorida 4 va 5 chi qatorda mavjud //typeof ga qaralsin
+    
+    // const ism = "Nur";
+    // console.log(Number(ism)); //NaN yani not a number number objecti bilan stringdagi matematik raqam ko'rinishidagi sonni number malumot turiga o'girish mumkun lekin stringdagi text yani alphabet harif ko'rinishidagi malumotni Number objecti bilan number malumot turiga o'girib bo'lmaydi shu sabab logda NaN chiqadi //typeof ga qaralsin
+    
+    //////////Number to Object String
+    // const yil = 2024; //number typeof ga qaralsin
+    // console.log(  yil); //number 2024 typeof ga qaralsin
+    // console.log(String(yil)); //yani number malumot turidan string malumot turiga o'girish yani String objecti bilan number malumot turini string malumot turiga o'girilgani//typeof ga qaralsin
+    
+    ////////////////////////////////Type Coercion////////////////////////////////////////////
+    //          string + number + string
+    // console.log("Men " + 1988 + " chi yilda tavallud topganman" );//auto string conversion//yani malumot turini bir ko'rinishdan ikkinchi turga o'tilishi Coercion deb ataladi  yani bu yerda js aftamatic ravishda 1988 number malumot turi hissoblangan qiymatni stringga aylatirib yubordi cunki bu yerda + (pilus) operatori stringga numberni qo'shib yubordi
+    //        string - string - number
+    // console.log("30" - "10" - 5);//auto number conversion// yani javob 15 chunki - (minus) operatori o'zidan oldingi string malumot turi ichidagi raqamni numberga aylantirib hissoblab ohiridagi 5 number malumot turi bilan hissoblab jabobni 15 qilib berdi
+    
+    ////////////////////////////////Truthy and Falsy////////////////////////////////////////////
+    
+    ////Falsy qiymatlar
+    console.log(Boolean(false));
+    console.log(Boolean(0));
+    console.log(Boolean(""));
+    console.log(Boolean(undefined));
+    console.log(Boolean(null));
+    console.log(Boolean(NaN));
+    console.log(Boolean(0n)); //yani bigInt raqam yani juda katta raqamlari
+    
+    //Truthy qiymatlar
+    console.log(Boolean("Nur"));
+    console.log(Boolean(23));
+    console.log(Boolean([]));
+    console.log(Boolean({}));
+    console.log(Boolean("0"));
+    console.log(Boolean("false"));
+    
+    const ism = "";
+    if (ism) {
+        console.log("Sizni ismingiz: " + ism);
+    } else {
+        console.log("Iltimos ism kiriting");
+    }
+    
+    </p>
 
 <br>
 
