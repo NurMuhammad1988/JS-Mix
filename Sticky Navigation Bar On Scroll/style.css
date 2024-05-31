@@ -24,7 +24,7 @@ header {
 
 header.sticky {
     padding: 5px 100px;
-    background: #fff;
+    background: #4f0707;
 
 }
 
@@ -71,5 +71,10 @@ header ul li a {
 
 header.sticky .logo,
 header.sticky ul li a {
-    color: red;
+    color: black;
+}
+
+header.sticky .logo,
+header.sticky ul li a:hover{
+    color: white;
 }
